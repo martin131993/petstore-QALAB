@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: Autimatizacion.api.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.81 s <<< FAILURE! - in Autimatizacion.api.ExamplesTest
+Autimatizacion.api.ExamplesTest.testParallel  Time elapsed: 3.777 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: 'https://petstore.swagger.io/v2/store/order/' + orderId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "orderId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:35 ==> expected: <0> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at Autimatizacion.api.ExamplesTest.testParallel(UsersRunner.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

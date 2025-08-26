@@ -1,0 +1,1101 @@
+23:11:29.699 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: Autimatizacion/api/store.feature - extraneous input '\r\n' expecting {EXAMPLES, STAR, GIVEN, WHEN, THEN, AND, BUT, TAGS}
+23:13:55.895 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:13:57.730 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:13:58.437 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+23:13:59.572 [main] DEBUG com.intuit.karate - response time in milliseconds: 1126
+1 < 200
+1 < Date: Tue, 26 Aug 2025 04:13:59 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012381,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+23:13:59.639 [main] DEBUG com.intuit.karate - write to file: target\target\order.json
+23:13:59.662 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:13:59.689 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:29
+* def orderFile = read('file:target/order.json')
+js failed:
+>>>>
+01: read('file:target/order.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: target/order.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:133)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:131)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:29
+23:16:25.542 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:16:27.086 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:16:27.476 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+23:16:28.186 [main] DEBUG com.intuit.karate - response time in milliseconds: 707
+1 < 200
+1 < Date: Tue, 26 Aug 2025 04:16:28 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012382,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+23:16:28.248 [main] DEBUG com.intuit.karate - write to file: target\target\order.json
+23:16:28.273 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:16:28.302 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:30
+* def orderFile = read('target/order.json')
+js failed:
+>>>>
+01: read('target/order.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: D:\petstore-automatizacion\target\test-classes\Autimatizacion\api\target\order.json (El sistema no puede encontrar la ruta especificada)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:30
+23:17:49.247 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:17:50.563 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:17:50.923 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+23:17:51.722 [main] DEBUG com.intuit.karate - response time in milliseconds: 787
+1 < 200
+1 < Date: Tue, 26 Aug 2025 04:17:51 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":8497177237845298059,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+23:17:51.792 [main] DEBUG com.intuit.karate - write to file: target\target\order.json
+23:17:51.817 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:17:51.847 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:30
+* def orderFile = read('file:target/order.json')
+js failed:
+>>>>
+01: read('file:target/order.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: target/order.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:133)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:131)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:30
+23:20:04.883 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:20:06.209 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:20:06.564 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+23:20:07.327 [main] DEBUG com.intuit.karate - response time in milliseconds: 756
+1 < 200
+1 < Date: Tue, 26 Aug 2025 04:20:07 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012384,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+23:20:07.386 [main] DEBUG com.intuit.karate - write to file: target\classpath:order.json
+23:20:07.389 [main] INFO  com.intuit.karate - [print] order written to classpath:order.json -> 9223372016900012384 
+23:20:07.410 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:20:07.443 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:29
+* def orderFile = read('classpath:order.json')
+js failed:
+>>>>
+01: read('classpath:order.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: order.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:29
+23:21:29.405 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:21:30.837 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:21:31.226 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+23:21:32.012 [main] DEBUG com.intuit.karate - response time in milliseconds: 782
+1 < 200
+1 < Date: Tue, 26 Aug 2025 04:21:32 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012385,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+23:21:32.061 [main] INFO  com.intuit.karate - [print] writing order.json to -> D:\petstore-automatizacion/target/order.json 
+23:21:32.113 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:25
+* eval karate.write({ id: orderId }, filePath)
+js failed:
+>>>>
+01: karate.write({ id: orderId }, filePath)
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: target\D:\petstore-automatizacion\target\order.json (El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos)
+- com.intuit.karate.FileUtils.writeToFile(FileUtils.java:187)
+- com.intuit.karate.core.ScenarioBridge.write(ScenarioBridge.java:1133)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:25
+23:21:32.150 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:21:32.157 [main] INFO  com.intuit.karate - [print] reading order.json from -> D:\petstore-automatizacion/target/order.json 
+23:21:32.168 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:36
+* def orderFile = read('file:' + filePath)
+js failed:
+>>>>
+01: read('file:' + filePath)
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: D:/petstore-automatizacion/target/order.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:133)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:131)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:36
+23:22:26.268 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:22:27.686 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:22:28.106 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+23:22:28.831 [main] DEBUG com.intuit.karate - response time in milliseconds: 715
+1 < 200
+1 < Date: Tue, 26 Aug 2025 04:22:28 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":8497177237845298062,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+23:22:28.889 [main] DEBUG com.intuit.karate - write to file: target\classpath:order.json
+23:22:28.891 [main] INFO  com.intuit.karate - [print] order written to classpath:order.json -> 8497177237845298062 
+23:22:28.911 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:22:28.941 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:29
+* def orderFile = read('classpath:order.json')
+js failed:
+>>>>
+01: read('classpath:order.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: order.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:29
+23:24:22.087 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:24:23.537 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:24:23.915 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+23:24:24.640 [main] DEBUG com.intuit.karate - response time in milliseconds: 721
+1 < 200
+1 < Date: Tue, 26 Aug 2025 04:24:24 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":8497177237845298064,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+23:24:24.728 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:23
+* eval karate.write({ id: orderId }, filePath)
+js failed:
+>>>>
+01: karate.write({ id: orderId }, filePath)
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: target\D:\petstore-automatizacion\target\order.json (El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos)
+- com.intuit.karate.FileUtils.writeToFile(FileUtils.java:187)
+- com.intuit.karate.core.ScenarioBridge.write(ScenarioBridge.java:1133)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:23
+23:24:24.764 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:24:24.774 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:33
+* def orderFile = read('file:' + filePath)
+js failed:
+>>>>
+01: read('file:' + filePath)
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: D:/petstore-automatizacion/target/order.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:133)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:131)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:33
+23:25:46.353 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:25:47.858 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:25:48.261 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+23:25:48.977 [main] DEBUG com.intuit.karate - response time in milliseconds: 713
+1 < 200
+1 < Date: Tue, 26 Aug 2025 04:25:49 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012387,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+23:25:49.038 [main] DEBUG com.intuit.karate - write to file: target\classpath:order.json
+23:25:49.041 [main] INFO  com.intuit.karate - [print] order written to classpath:order.json -> 9223372016900012387 
+23:25:49.073 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:25:49.122 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:29
+* def orderFile = read('classpath:order.json')
+js failed:
+>>>>
+01: read('classpath:order.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: order.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:29
+23:27:13.270 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:27:14.665 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:27:15.033 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+23:27:15.819 [main] DEBUG com.intuit.karate - response time in milliseconds: 783
+1 < 200
+1 < Date: Tue, 26 Aug 2025 04:27:15 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012388,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+23:27:15.875 [main] DEBUG com.intuit.karate - write to file: target\target\order.json
+23:27:15.877 [main] INFO  com.intuit.karate - [print] order written to target/order.json -> 9223372016900012388 
+23:27:15.900 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:27:15.925 [main] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:30
+* def orderFile = read('file:target/order.json')
+js failed:
+>>>>
+01: read('file:target/order.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: target/order.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:133)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:131)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:30
+00:00:05.034 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crear
+00:00:06.241 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:00:06.247 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756184406244
+00:00:08.027 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:00:08.698 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+00:00:09.570 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 864
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:00:09 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012441,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+00:00:09.635 [pool-2-thread-1] DEBUG com.intuit.karate - write to file: target\target\order.json
+00:00:09.638 [pool-2-thread-1] INFO  com.intuit.karate - [print] order written to target/order.json -> 9223372016900012441 
+00:00:10.375 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:00:35.775 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @buscar
+00:00:36.819 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:00:36.823 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756184436820
+00:00:38.133 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:00:38.187 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:31
+* def orderFile = read('target/order.json')
+js failed:
+>>>>
+01: read('target/order.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: D:\petstore-automatizacion\target\test-classes\Autimatizacion\api\target\order.json (El sistema no puede encontrar la ruta especificada)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:31
+00:00:38.832 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:03:56.075 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @buscar
+00:03:57.173 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:03:57.176 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756184637173
+00:03:58.400 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:03:58.448 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:31
+* def orderId = orderFile.id
+js failed:
+>>>>
+01: orderFile.id
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "orderFile" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:31
+00:03:59.176 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:07:10.328 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crear
+00:07:11.500 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:07:11.505 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756184831501
+00:07:12.854 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:07:13.428 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+00:07:14.130 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 698
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:07:14 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012443,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+00:07:14.217 [pool-2-thread-1] DEBUG com.intuit.karate - write to file: target\target\order.json
+00:07:14.221 [pool-2-thread-1] INFO  com.intuit.karate - [print] order written to target/order.json -> 9223372016900012443 
+00:07:14.892 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:07:26.734 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @buscar
+00:07:27.866 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:07:27.871 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756184847867
+00:07:29.125 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:07:29.174 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:32
+Given url 'https://petstore.swagger.io/v2/store/order/' + orderId
+js failed:
+>>>>
+01: 'https://petstore.swagger.io/v2/store/order/' + orderId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "orderId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:32
+00:07:29.859 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:08:56.852 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crear
+00:08:57.946 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:08:57.951 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756184937947
+00:08:59.240 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:08:59.676 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+00:09:00.398 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 717
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:09:00 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012444,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+00:09:00.424 [pool-2-thread-1] INFO  com.intuit.karate - [print] Orden creada -> 9223372016900012444 
+00:09:01.094 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:09:23.526 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @buscar
+00:09:24.618 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:09:24.623 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756184964620
+00:09:25.843 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:09:25.889 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:31
+Given url 'https://petstore.swagger.io/v2/store/order/' + orderId
+js failed:
+>>>>
+01: 'https://petstore.swagger.io/v2/store/order/' + orderId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "orderId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:31
+00:09:26.567 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:15:33.225 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crear
+00:15:34.329 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:15:34.333 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756185334330
+00:15:35.574 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:15:35.970 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+00:15:36.677 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 703
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:15:36 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":8497177237845298080,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+00:15:36.709 [pool-2-thread-1] INFO  com.intuit.karate - [print] Orden creada -> 8497177237845298080 
+00:15:37.519 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:15:51.346 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @buscar
+00:15:52.469 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:15:52.475 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756185352470
+00:15:53.728 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:15:53.785 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:31
+* def result = callonce read('classpath:store.feature@crear')
+js failed:
+>>>>
+01: read('classpath:store.feature@crear')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: store.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:31
+00:15:54.517 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:24:14.761 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crear
+00:24:15.779 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: Autimatizacion/api/store.feature - missing EXAMPLES at '\r\n  Scenario: '
+00:27:44.526 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crear
+00:27:45.625 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: Autimatizacion/api/store.feature - extraneous input '\r\n\r\n    Examples:' expecting {<EOF>, SCENARIO, SCENARIO_OUTLINE, TAGS, NEWLINE}
+00:30:25.352 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crear
+00:30:26.441 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:30:26.446 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756186226442
+00:30:27.680 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:30:28.085 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+00:30:28.812 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 716
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:30:29 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":8497177237845298086,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+00:30:28.829 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "id": 8497177237845298086,
+  "petId": 0,
+  "quantity": 1,
+  "shipDate": "2025-08-26T03:30:47.500+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+00:30:29.503 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:30:44.662 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @buscar
+00:30:45.695 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:30:45.699 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756186245696
+00:30:46.980 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:30:47.039 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:24
+Given url 'https://petstore.swagger.io/v2/store/order/' + orderId
+js failed:
+>>>>
+01: 'https://petstore.swagger.io/v2/store/order/' + orderId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "orderId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:24
+00:30:47.731 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:37:37.781 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crear
+00:37:38.855 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:37:38.883 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756186658879
+00:37:40.811 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:37:41.663 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+00:37:42.575 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 906
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:37:42 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012460,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+00:37:42.585 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "id": 9223372016900012460,
+  "petId": 0,
+  "quantity": 1,
+  "shipDate": "2025-08-26T03:30:47.500+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+00:37:43.431 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:39:17.199 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @buscar
+00:39:18.343 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:39:18.348 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756186758344
+00:39:19.678 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:39:19.678 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:39:19.678 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:39:19.995 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/2
+1 > Content-type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:39:19.995 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/3
+1 > Content-type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:39:19.995 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/1
+1 > Content-type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:39:20.770 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 764
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:39:20 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":1,"petId":0,"quantity":0,"shipDate":"2023-03-27T02:14:59.643+0000","status":"placed","complete":true}
+
+00:39:20.770 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 764
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:39:20 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":2,"petId":4,"quantity":1,"shipDate":"2025-08-26T02:32:15.362+0000","status":"placed","complete":true}
+
+00:39:20.770 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 764
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:39:20 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":3,"petId":0,"quantity":0,"shipDate":"2023-03-27T02:14:59.643+0000","status":"placed","complete":true}
+
+00:39:20.828 [pool-2-thread-3] INFO  com.intuit.karate - [print] Esta es la mascota {
+  "id": 3,
+  "petId": 0,
+  "quantity": 0,
+  "shipDate": "2023-03-27T02:14:59.643+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+00:39:20.828 [pool-2-thread-2] INFO  com.intuit.karate - [print] Esta es la mascota {
+  "id": 2,
+  "petId": 4,
+  "quantity": 1,
+  "shipDate": "2025-08-26T02:32:15.362+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+00:39:20.828 [pool-2-thread-1] INFO  com.intuit.karate - [print] Esta es la mascota {
+  "id": 1,
+  "petId": 0,
+  "quantity": 0,
+  "shipDate": "2023-03-27T02:14:59.643+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+00:39:21.491 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:44:55.673 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crear
+00:44:56.755 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:44:56.761 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756187096757
+00:44:58.039 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:44:58.417 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+00:44:59.111 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 691
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:44:59 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012464,"petId":0,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+00:44:59.121 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "id": 9223372016900012464,
+  "petId": 0,
+  "quantity": 1,
+  "shipDate": "2025-08-26T03:30:47.500+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+00:44:59.788 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:45:12.327 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @buscar
+00:45:13.466 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:45:13.472 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756187113468
+00:45:14.775 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:45:14.775 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:45:14.775 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:45:15.095 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/3
+1 > Content-type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:45:15.095 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/2
+1 > Content-type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:45:15.095 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/0
+1 > Content-type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:45:15.778 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 676
+1 < 404
+1 < Date: Tue, 26 Aug 2025 05:45:15 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"Order not found"}
+
+00:45:15.778 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 676
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:45:15 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":2,"petId":0,"quantity":0,"shipDate":"2023-03-27T02:14:59.643+0000","status":"placed","complete":true}
+
+00:45:15.778 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 676
+1 < 404
+1 < Date: Tue, 26 Aug 2025 05:45:15 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"Order not found"}
+
+00:45:15.829 [pool-2-thread-2] INFO  com.intuit.karate - [print] Esta es la mascota {
+  "id": 2,
+  "petId": 0,
+  "quantity": 0,
+  "shipDate": "2023-03-27T02:14:59.643+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+00:45:15.840 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:27
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 676, url: https://petstore.swagger.io/v2/store/order/0, response: 
+{"code":1,"type":"error","message":"Order not found"}
+classpath:Autimatizacion/api/store.feature:27
+00:45:15.840 [pool-2-thread-3] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:27
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 676, url: https://petstore.swagger.io/v2/store/order/3, response: 
+{"code":1,"type":"error","message":"Order not found"}
+classpath:Autimatizacion/api/store.feature:27
+00:45:16.538 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:45:32.821 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @buscar
+00:45:33.935 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:45:33.939 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756187133936
+00:45:35.205 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:45:35.205 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:45:35.205 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:45:35.634 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/2
+1 > Content-type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:45:35.634 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/3
+1 > Content-type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:45:35.634 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/1
+1 > Content-type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:45:36.458 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 813
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:45:36 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":2,"petId":0,"quantity":0,"shipDate":"2023-03-27T02:14:59.643+0000","status":"placed","complete":true}
+
+00:45:36.458 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 813
+1 < 404
+1 < Date: Tue, 26 Aug 2025 05:45:36 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"Order not found"}
+
+00:45:36.457 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 813
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:45:36 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":3,"petId":0,"quantity":0,"shipDate":"2023-03-27T02:14:59.643+0000","status":"placed","complete":true}
+
+00:45:36.512 [pool-2-thread-2] INFO  com.intuit.karate - [print] Esta es la mascota {
+  "id": 2,
+  "petId": 0,
+  "quantity": 0,
+  "shipDate": "2023-03-27T02:14:59.643+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+00:45:36.512 [pool-2-thread-3] INFO  com.intuit.karate - [print] Esta es la mascota {
+  "id": 3,
+  "petId": 0,
+  "quantity": 0,
+  "shipDate": "2023-03-27T02:14:59.643+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+00:45:36.520 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:27
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 813, url: https://petstore.swagger.io/v2/store/order/1, response: 
+{"code":1,"type":"error","message":"Order not found"}
+classpath:Autimatizacion/api/store.feature:27
+00:45:37.196 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:49:22.414 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crear
+00:49:23.555 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:49:23.560 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756187363556
+00:49:24.839 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:49:24.839 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:49:24.839 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:49:25.292 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 105
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":102,"quantity":2,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+00:49:25.292 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 105
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":101,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+00:49:25.292 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/store/order
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 105
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"petId":103,"quantity":1,"shipDate":"2025-08-26T03:30:47.500Z","status":"placed","complete":true}
+
+00:49:26.036 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 740
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:49:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372016900012466,"petId":103,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+00:49:26.037 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 740
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:49:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":8497177237845298099,"petId":101,"quantity":1,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+00:49:26.036 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 740
+1 < 200
+1 < Date: Tue, 26 Aug 2025 05:49:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":8497177237845298098,"petId":102,"quantity":2,"shipDate":"2025-08-26T03:30:47.500+0000","status":"placed","complete":true}
+
+00:49:26.069 [pool-2-thread-1] INFO  com.intuit.karate - [print] Orden creada con ID -> 8497177237845298099 
+00:49:26.069 [pool-2-thread-3] INFO  com.intuit.karate - [print] Orden creada con ID -> 9223372016900012466 
+00:49:26.069 [pool-2-thread-2] INFO  com.intuit.karate - [print] Orden creada con ID -> 8497177237845298098 
+00:49:26.825 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
+00:50:24.542 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @buscar
+00:50:25.605 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:50:25.612 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1756187425606
+00:50:26.881 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:50:26.975 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Autimatizacion/api/store.feature:35
+Given url 'https://petstore.swagger.io/v2/store/order/' + orderId
+js failed:
+>>>>
+01: 'https://petstore.swagger.io/v2/store/order/' + orderId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "orderId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:Autimatizacion/api/store.feature:35
+00:50:27.733 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:Autimatizacion/api/store.feature
